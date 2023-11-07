@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//Dichiarazione Styled Components:
+const H1 = styled.h1`
+  color: red;
+  text-align: center;
+  font-size: 70px;
+`
+
+const App = () => {
+
+  //Chiamate e Dichiarazioni Funzioni:
+  console.log('Hello World')
+
+  //Struttura del componente (HTML):
+  return(
+    <div>
+      <H1>Hello World</H1>
     </div>
-  );
+  )
 }
 
 export default App;
